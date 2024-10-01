@@ -1,0 +1,16 @@
+To the given list:
+
+
+
+cities = ['Los Angeles', 'New York', 'Chicago']
+
+
+append the city: 'Houston' and print the list to the console.
+
+
+
+answer:
+
+cities = ['Los Angeles', 'New York', 'Chicago']
+cities.append('Houston')
+print(cities)
