@@ -1,0 +1,41 @@
+Two following lists are given:
+
+
+
+headers = ['user_id', 'amount']
+users = [['001', '1400'], ['004', '1300'], ['007', '900']]
+
+
+Save the above data to the users.csv file (file in csv format - comma-separated values) as shown below.
+
+
+
+File users.csv after saving:
+
+
+
+user_id,amount
+001,1400
+004,1300
+007,900
+
+
+answer:
+import csv
+
+# Dados fornecidos
+headers = ['user_id', 'amount']
+users = [['001', '1400'], ['004', '1300'], ['007', '900']]
+
+# Abrindo o arquivo users.csv no modo de escrita
+with open('users.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    
+    # Escrevendo o cabeçalho
+    writer.writerow(headers)
+    
+    # Escrevendo os dados dos usuários
+    writer.writerows(users)
+
+print("Dados salvos com sucesso no arquivo users.csv.")
+
