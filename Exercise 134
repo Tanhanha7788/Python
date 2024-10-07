@@ -1,0 +1,20 @@
+Implement a function is_distinct() to check if the list contains unique values.
+
+
+
+Example:
+
+
+
+[IN]: is_distinct([1, 2, 3])
+[OUT]: True
+
+
+[IN]: is_distinct([1, 2, 3, 3])
+[OUT]: False
+
+
+Answer:
+
+def is_distinct(items):
+    return len(items) == len(set(items))
