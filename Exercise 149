@@ -1,0 +1,43 @@
+Implement a generator named dayname() that accepts the index of the element from the following list:
+
+
+
+days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+
+
+and allows us to iterate over 3 days (previous day, present day, next day).
+
+
+
+Example:
+
+
+
+[IN]:
+
+for pair in dayname(0):
+    print(pair)
+
+
+[OUT]:
+
+Sun
+Mon
+Tue
+
+
+Answer:
+
+def dayname(index):
+    # Lista de dias da semana
+    days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    
+    # Determina o dia anterior, atual e próximo (com rotação circular)
+    prev_day = days[(index - 1) % len(days)]  # Dia anterior (rotação circular)
+    curr_day = days[index % len(days)]        # Dia atual
+    next_day = days[(index + 1) % len(days)]  # Próximo dia (rotação circular)
+    
+    # Usa yield para retornar um valor por vez
+    yield prev_day
+    yield curr_day
+    yield next_day
