@@ -1,0 +1,11 @@
+Create a list consisting of dictionaries mapping consecutive digits from 1 to 9 inclusive to their respective k-th powers, for k = 1, 2, 3.
+
+
+
+Print the result to the console as shown below.
+
+
+ answer:
+
+data = [{i: i**j for i in range(1, 10)} for j in range(1, 4)]
+print(data)
