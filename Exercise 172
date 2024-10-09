@@ -1,0 +1,17 @@
+Using the built-in module for regular expressions, find all digits in the following text:
+
+
+
+string = 'Python 3.8'
+
+
+Print the result to the console.
+
+answer:
+
+import re
+ 
+ 
+string = 'Python 3.8'
+result = re.findall(pattern=r"\d", string=string)
+print(result)
