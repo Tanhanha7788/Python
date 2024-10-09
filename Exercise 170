@@ -1,0 +1,8 @@
+Print the calendar for 2020 to the console using the calendar built-in module.
+
+answer:
+
+import calendar
+ 
+ 
+print(calendar.calendar(2020))
