@@ -1,0 +1,18 @@
+Implement a function called fill_value() that returns a two-dimensional array of height x width and fills it with a fixed value.
+
+
+
+Arguments:
+
+height - natural number, height of the array
+
+width - natural number, width of the array
+
+value - the value to fill the array
+
+
+
+answer:
+
+def fill_value(height, width, value):
+    return [[value] * width for i in range(height)]
