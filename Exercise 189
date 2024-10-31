@@ -1,0 +1,10 @@
+Implement a function called arange() that takes three parameters: start, stop, step and generates a list consisting of integers greater than or equal to start and less than stop.
+The step parameter defaults to 1 indicates the size of the step.
+
+Answer:
+
+def arange(start, stop, step=1):
+    result = []
+    for i in range(start, stop, step):
+        result.append(i)
+    return result
