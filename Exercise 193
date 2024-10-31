@@ -1,0 +1,21 @@
+Implement a function called transpose() that transposes the two-dimensional matrix (nested list).
+
+
+
+Argument:
+
+array - nested list (two-dimensional matrix)
+
+
+answer:
+
+def transpose(array):
+    width = len(array[0])
+    result = []
+    
+    for i in range(width):
+        pair = []
+        for item in array:
+            pair.append(item[i])
+        result.append(pair)
+    return result
