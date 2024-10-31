@@ -1,0 +1,15 @@
+Implement a function called trace() that returns the trace of the matrix. The matrix must be a square matrix.
+
+
+
+Argument:
+
+array - nested list (two-dimensional matrix)
+
+answer:
+
+def trace(array):
+    total = 0
+    for idx, item in enumerate(array):
+        total += item[idx]
+    return total
