@@ -1,0 +1,15 @@
+Implement a function top_n() which extracts top n largest values from the given list.
+
+
+
+Arguments:
+
+items - list of values
+
+n - top n elements to extract
+
+answer:
+
+def top_n(items, n):
+    items.sort(reverse=True)
+    return items[:n]
